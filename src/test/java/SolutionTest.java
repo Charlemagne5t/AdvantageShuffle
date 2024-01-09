@@ -22,4 +22,14 @@ public class SolutionTest {
         Assert.assertArrayEquals(expected, actual);
     }
 
+    @Test
+    public void advantageCountTest3() {
+        int[] nums1 = {2,0,4,1,2};
+        int[] nums2 = {1,3,0,0,2};
+        int[] expected = {2,0,2,1,4};
+        int[] actual = new Solution().advantageCount(nums1, nums2);
+
+        Assert.assertArrayEquals(expected, actual);
+    }
+
 }
